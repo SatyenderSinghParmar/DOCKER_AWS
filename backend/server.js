@@ -15,7 +15,8 @@ const io = new Server(httpServer, {
     }
 })
  
-const ySocketIO = new YsockeetIO(io)
+const ySocketIO = new YSocketIO(io)
+ySocketIO.initialize()
 
 // Health check routes
 app.get('/', (req, res) => {
