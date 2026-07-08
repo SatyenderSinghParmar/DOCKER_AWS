@@ -1,0 +1,5 @@
+Frontend => npm run build => creates a dist folder [html, css, js]
+
+Copy the dist folder content in Backend/public folder
+
+use app.use(express.static("public"))

@@ -36,7 +36,7 @@ function App() {
 
   useEffect(() => {
     if(userName) {
-      const provider = new SocketIOProvider('http://localhost:3000', 'monaco-room', ydoc, {
+      const provider = new SocketIOProvider('/', 'monaco-room', ydoc, {
         autoConnect: true,
       })
 
